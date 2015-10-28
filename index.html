@@ -82,7 +82,7 @@
           <ul>
             <li>Reusability</li>
             <li>Everything is a component in Angular 2</li>
-            <li>module.component</li>
+            <li>Using a component based directive allows you to copy and paste the logic over to Angular 2 components.</li>
           </ul>
         </section>
 
@@ -94,9 +94,8 @@
         <section>
 					<h2>But why? Why put my business logic in a Service and not in a Controller?</h2>
 					<ul>
-						<li>Typical use of a Service (read/write to api - persistence)</li>
 						<li>Common misconception - only use services for api interaction. NOT SO!!!</li>
-						<li>Services are singletons, yo
+						<li>Services are singletons, yo</li>
 						<li>Encapsulate your business logic in a singleton so that it can be shared throughout your app</li>
 					</ul>
 				</section>
@@ -125,6 +124,19 @@
 					<h2>Here is the directive diff</h2>
           <p><img class="plain" data-src="https://s3.amazonaws.com/angular-2-migration/directive-component-diff.png"></p>
 				</section>
+
+        <section>
+          <h2>Controller diff</h2>
+          <p><small>(we removed it)</small></p>
+        </section>
+
+        <section>
+          <h2>ngUpgrade</h2>
+          <ul>
+            <li>ngUpgrade will allow you to use Angular 2 syntax in your Angular 1 apps</li>
+            <li>As long as you keep you apps upgraded to the latest Angular 1.x version</li>
+          </ul>
+        </section>
 
         <section>
 					<h2>Summary</h2>
